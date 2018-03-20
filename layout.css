@@ -7,7 +7,7 @@
 .header{
     width: 100%;
     height: 100px;
-    background-color: #1abc9c;
+    background-color: #4D84C0;
 }
 
 .header h1{
@@ -21,7 +21,7 @@
 .header h3{
     padding-left: 10px;
     font-size: 15px;
-    color: #c0392b;
+    color: #fff;
     font-family: cursive;
 }
 .header label{
@@ -48,7 +48,7 @@
     font-size: 20px;
 }
 .nav ul{
-    background: #7f8c8d;
+    background: #fff;
     list-style: none;
     position: relative;
     display: inline-table;
@@ -59,7 +59,7 @@
     float: left;
 }
 .nav ul li:hover{
-    background: #1abc9c;
+    background: #4D84C0;
     
 }
 .nav ul li:hover a{
@@ -68,7 +68,7 @@
 .nav ul li a{
     display: block;
     padding: 5px;
-    color: #bdc3c7;
+    color: #4D84C0;
     text-decoration: none;
 }
 
@@ -89,8 +89,8 @@
     float: left;
     padding: 15px;
 }
-.co-l{width: 20%;}
-.co-r{width: 75%;}
+.co-l{width: 15%;}
+.co-r{width: 80%;}
 .menu ul{
     list-style-type: none;
     margin: 0;
@@ -100,12 +100,12 @@
 .menu li{
     padding: 8px;
     margin-bottom: 5px;
-    background: #16a085;
+    background: #4D84C0;
     color: snow;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .menu li:hover{
-    background: #1abc9c;
+    background: #4D84C0;
 }
 .menu a{
     color: snow;
@@ -125,22 +125,22 @@ h1{
     margin: auto;
     width: 100%;
     height: 110px;
-    background: gray;
+    background: #4D84C0;
     padding: 10px;
 }
 .footer a{
     text-decoration: none;
-    color: #bdc3c7;
+    color: #fff;
 }
 .footer a:hover{
-    background: #1abc9c;
+    background: #4D84C0;
     font-size: 20px;
 }
 .footer p{
     margin: auto;
     text-align: center;
     padding: 10px 0px;
-    color: #bdc3c7;
+    color: #fff;
     font-family: sans-serif;
     font-size: 13px;
 }
