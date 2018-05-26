@@ -14,26 +14,36 @@
 		app.config(function($routeProvider){
 			  $routeProvider.when("/", {templateUrl : "main.htm"})
 			  .when("/about", {templateUrl : "about.htm"})
-			  .when("/product", {templateUrl : "product.htm"})
+			  .when("/weather", {templateUrl : "weather.htm",
+					controller:"weatherUrl"
+				})
 			  .when("/contact", {templateUrl : "contact.htm"});
 		});
+		app.controller("weatherUrl",function($scope,$http){
+			var url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=4de4dd041e499ca8a4f6692097befdae";
+			$http.get(url).then(function(response){
+				$scope.info = response.data;
+			});
+			$scope.title="weather";
+		}); 
+
 	</script>
 </head>
 <body>
 	<div ng-app="MyApp" class="container-fluid"> 
 	<div class="row header">
 			<div class="col-12">
-				<h1><i class="fas fa-code"></i> Assalamualaikum <i class="fas fa-code"></i></h1>
+				<h1>Assalamualaikum</h1>
 					<p> </p>
 			</div>
 
 		<div class="row menu">
 			<div class="col-12">
 
-				<a href="#/!">Home</a> ::
-				<a href="#!about">About</a> ::
-				<a href="#!product">Product</a> ::
-				<a href="#!contact">Contact</a> ::
+				<a href="#/!">Home</a> :
+				<a href="#!about">About</a> :
+				<a href="#!weather">weather</a> :
+				<a href="#!contact">Contact</a>
 				
 			</div>
 		</div>
